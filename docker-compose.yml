@@ -2,6 +2,6 @@ services:
   rotina-tea:
     build:
       context: .
-    ports:
-      - "8080:80"
+    expose:
+      - "80"
     restart: unless-stopped
